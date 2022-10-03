@@ -16,6 +16,7 @@ jobs:
           cache: 'maven'
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots package
+      - name: Setup fly
+        uses: superfly/flyctl-actions/setup-flyctl@master
       - name: Deploy to fly
-      - uses: superfly/flyctl-actions/setup-flyctl@master
-      - run: flyctl deploy --remote-only
+        run: flyctl deploy --remote-only
