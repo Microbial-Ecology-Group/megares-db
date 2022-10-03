@@ -17,5 +17,5 @@ jobs:
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots package
       - name: Deploy to fly
-        uses: superfly/flyctl-actions/setup-flyctl@master
-        run: flyctl deploy --remote-only
+      - uses: superfly/flyctl-actions/setup-flyctl@master
+      - run: flyctl deploy --remote-only
