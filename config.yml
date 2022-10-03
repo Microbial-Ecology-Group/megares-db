@@ -1,0 +1,21 @@
+#
+# General server configuration
+#
+server:
+  rootPath: /api/
+
+database:
+  driverClass: org.postgresql.Driver
+  user: ${POSTGRES_USER}
+  password: ${POSTGRES_PASSWORD}
+  url: jdbc:postgresql://${POSTGRES_HOSTNAME}:${POSTGRES_PORT}/${POSTGRES_DATABASE}
+  properties:
+    charSet: UTF-8
+
+#
+# Logging configuration
+#
+logging:
+  level: INFO
+  loggers:
+    org.meglab: DEBUG
