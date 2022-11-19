@@ -49,7 +49,7 @@ The database contains two tables: "descriptions" and "sequences". Each table's d
 1. Under the "Columns" table, all the columns should be selected by default ("id", "term", "description" and "links" for the Descriptions table and "id", "header", "fasta", "type", "class", "mechanism" and "seq_group" for the Sequences table)
 1. Click "OK" to export. This shouldn't more than a minute (depends on your Internet bandwidth).
 
-## Importing CSV files to the database
+### Importing CSV files to the database
 
 To replace data in an existing table you must first delete the existing data:
 
